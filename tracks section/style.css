@@ -1,0 +1,132 @@
+html{
+    background-color: #131b21;
+    /* background: linear-gradient(315deg, #4c4177 0%, #2a5470 74%); */
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.heading-tracks{
+    font-weight: 1000;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    font-size: xx-large;
+}
+.track-1{
+    border: 1px solid rgba(255, 255, 255, 0.493);
+    max-width: 1200px;
+    margin: 125px auto;
+    border-radius: 50px;
+}
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.details-left{
+    width: 48%;
+    float: left;
+}
+
+.details-right{
+    width: 48%;
+    float: right;
+}
+
+.text{
+    padding: 3%;
+    color: #fff;
+}
+
+.img-left{
+    width:90%;
+    border-radius: 10px;
+    transform: scale(1) perspective(1000px) rotateX(23deg) rotateY(23deg) rotate(-9.8deg) translateX(-15px) translateY(-185px);
+    box-shadow: -67.1px 62.5px 125px -25px rgba(9,9,14,.856), -16.2px 37.5px 75px -37.5px rgba(6,12,34,.274);
+    transition: all .2s;
+    margin-bottom: -400px;
+    margin-left: 80px;
+    /* display: inline-block; */
+}
+
+.img-right{
+    width:90%;
+    border-radius: 10px;
+    transform: scale(1) perspective(1000px) rotateX(23deg) rotateY(-23deg) rotate(15deg) translateX(-45px) translateY(-150px);
+    box-shadow: 67.1px 62.5px 125px -25px rgba(9,9,14,.856), 16.2px 37.5px 75px -37.5px rgba(6,12,34,.274);
+    transition: all .2s;
+    margin-bottom: -400px;
+    margin-right: 80px;
+}
+
+
+.img-left:hover{
+    transform: scale(1) perspective(0) rotateX(0) rotateY(0) rotate(0) translateX(-45px) translateY(-135px);
+}
+
+.img-right:hover{
+    transform: scale(1) perspective(0) rotateX(0) rotateY(0) rotate(0) translateX(0) translateY(-135px);
+}
+
+.heading-secondary{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.paragraph{
+    margin-top: 0px;
+    font-weight: 200;
+}
+
+.flutter{
+    height: 350px;
+}
+
+@media (max-width: 970px){
+
+    .track-1{
+        max-width: 500px;
+        min-width: 200px;
+        margin: 200px auto;
+        padding: 3%;
+        position: relative;
+    }
+
+    div{
+        display: block;
+    }
+
+    img{
+        position: absolute;
+        margin-bottom: 50px;
+        width: 550px;
+    }
+
+    .text{
+        margin-top: 30%;
+    }
+
+    .details-left{
+        float: none;
+        width: 100%;
+    }
+
+    .details-right{
+        float: none;
+        width: 100%;
+    }
+
+    .ML{
+        margin-top: 10%;
+    }
+
+    .flutter{
+        height: 270px;
+    }
+
+}
